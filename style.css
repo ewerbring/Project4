@@ -1,0 +1,385 @@
+.maincontainer {
+    background-color: #faf5f0;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    height: 100vh;
+    overflow: scroll;
+    grid-template-rows: auto;
+    cursor: none;
+    margin: 0px;
+
+}
+
+.cursor {
+  width: 25px;
+  height: 25px;
+  background-color: #EFCCAD;
+  /* opacity: 50%; */
+  border-radius: 50%;
+  position: relative;
+}
+
+.box1 {
+  display: grid;
+  grid-row-start: 0;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 20; 
+}
+
+
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 52px;
+    color: transparent;
+    -webkit-text-stroke: 2px #B3C7D1;
+
+}
+
+
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #B3C7D1;
+    /* overflow: scroll; */
+    font-size: 18px;
+    padding: 8px;
+
+}
+
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #B3C7D1;
+    overflow: scroll;
+    font-size: 12px;
+    padding: 8px;
+    /* overflow: scroll; */
+
+}
+
+
+.textcontainer {
+  /* position: relative; */
+  float: right;
+  text-align: left;
+  width: 80%;
+
+}
+
+.textcontainer2 {
+  /* position: relative; */
+  float: right;
+  text-align: left;
+  width: 80%;
+
+}
+
+h4 {
+  font-family: 'Karla', sans-serif;
+  color: #B3C7D1;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 20px;
+
+}
+
+.box2 {
+    border: 1px solid #B3C7D1;
+    overflow: scroll;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+.vertical-rl { 
+    writing-mode: vertical-lr;
+    font-family: 'Karla', sans-serif;
+    font-size: 24px; 
+    color: #B3C7D1;
+    font-weight: bold;
+    /* transform: rotate(180deg); */
+    padding: 20px;
+    margin: 0px;
+    position: relative;
+    width: 5%;
+
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+   }
+
+a:hover {
+  cursor: none; 
+  background-color: white;
+}
+
+.second:hover {
+  background-color: white;
+}
+
+.box3 {
+    grid-column-start: 7; 
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1px solid #B3C7D1;
+
+}
+
+
+ .albers1 {
+    height: 60%;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 5px;
+    background-color:  #FFF67E;
+    mix-blend-mode: multiply;
+    opacity: 90%;
+    z-index: 10;
+    animation: shape1 8s infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: none;
+}
+
+@keyframes shape1 {
+    0% {
+      background-color:  #FFF67E;
+      opacity: 80%;
+    }
+    100% {
+      background-color: #625ea6;
+      opacity: 80%;
+    }
+  }
+
+  .albers2 {
+    height: 95%;
+    width: 90%;
+    position: relative;
+    left: 45px;
+    transform: rotate(25deg);
+    background-color: #FFF67E;
+    mix-blend-mode: multiply;
+    opacity: 90%;
+    z-index: 20;
+    animation: shape2 8s infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: none;
+}
+
+
+@keyframes shape2 {
+    0% {
+      background-color:  #FFF67E;
+      opacity: 80%;
+    }
+    100% {
+      background-color: #625ea6;
+      opacity: 80%;
+    }
+  }
+
+
+.albers3 {
+    height: 95%;
+    width: 90%;
+    position: relative;
+    bottom: 250px;
+    right: 40px;
+    transform: rotate(-25deg);
+    background-color: #FFF67E;
+    mix-blend-mode: multiply;
+    opacity: 90%;
+    z-index: 20;
+    animation: shape3 8s infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: none;
+}
+
+@keyframes shape3 {
+    0% {
+      background-color:  #FFF67E;
+      opacity: 80%;
+    }
+    100% {
+      background-color: #625ea6;
+      opacity: 80%;
+    }
+  } 
+
+
+  @media (max-width: 1300px) {
+  .albers1 {
+    height: 300px;
+    width: 130px;
+    }
+
+  .albers2 {
+    height: 300px;
+    width: 100px;
+  }
+
+  .albers3 {
+    height: 300px;
+    width: 100px;
+    position: relative;
+    bottom: 300px;
+}
+  }
+
+  @media (max-width: 1000px) {
+    .albers1 {
+      height: 250px;
+      width: 100px;
+      }
+  
+    .albers2 {
+      height: 220px;
+      width: 80px;
+
+    }
+  
+    .albers3 {
+      visibility: hidden;
+  }
+    }
+
+    @media (max-width: 800px) {
+      .albers1 {
+        height: 200px;
+        width: 80px;
+        }
+    
+      .albers2 {
+       visibility: hidden;
+      }
+    
+      .albers3 {
+        visibility: hidden;
+    }
+      }
+
+      @media (max-height: 400px) {
+        .albers1 {
+          height: 250px;
+          width: 100px;
+          }
+      
+        .albers2 {
+          visibility: hidden;
+    
+        }
+      
+        .albers3 {
+          visibility: hidden;
+      }
+        }
+  
+
+
+
+.box4 {
+    grid-column-start: 14; 
+    grid-column-end: 19;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1px solid #B3C7D1;
+
+}
+
+
+
+.box5 {
+    grid-column-start: 2; 
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 50px;
+    border: 1px solid #B3C7D1;
+    display: flex;
+}
+
+
+.box6 {
+  grid-column-start: 14; 
+  grid-column-end: 19;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 50px;
+  border: 1px solid #B3C7D1;
+
+}
+
+/* .box6:hover {
+  background-image: url(shelf.jpg);
+} */
+
+
+
+.box7 {
+  grid-column-start: 0; 
+  grid-column-end: 20;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  border-bottom: .5px #B3C7D1;
+  visibility: hidden;
+}
+
+
+.buttoncontainer {
+  text-align: center;
+  margin: 0px;
+
+}
+
+
+
+.firstbutton{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: transparent;
+  color: #B3C7D1;
+  width: 90px;
+  height: 30px;
+  box-shadow: 10px white;
+}
+
+.secondbutton{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: transparent;
+  color: #B3C7D1;
+  width: 120px;
+  height: 30px;
+  box-shadow: 10px white;
+}
+
+.thirdbutton{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: transparent;
+  color: #B3C7D1;
+  width: 130px;
+  height: 30px;
+  box-shadow: 10px white;
+}
+
+
+.slideshow1 {
+
+  margin: auto;
+  margin-left: 100px;
+  width: 50%;
+  height: 50%;
+}
+
+.slideshow:hover {
+mix-blend-mode: soft-light;
+}
+
